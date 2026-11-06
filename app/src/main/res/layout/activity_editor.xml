@@ -1,0 +1,7 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent"><LinearLayout android:padding="20dp" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+ <TextView android:text="Tạo bài kiểm tra" android:textStyle="bold" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+ <EditText android:id="@+id/title" android:hint="Tên bài kiểm tra (VD: GDCD 6 - 45 phút)" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <EditText android:id="@+id/questions" android:inputType="number" android:text="40" android:hint="Số câu (tối đa 40)" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+ <TextView android:text="Sau khi tạo, nhập đáp án riêng cho từng mã đề." android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+ <com.google.android.material.button.MaterialButton android:id="@+id/save" android:text="TẠO BÀI KIỂM TRA" android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout></ScrollView>

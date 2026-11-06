@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#101828">
+ <androidx.camera.view.PreviewView android:id="@+id/cameraPreview" android:layout_width="match_parent" android:layout_height="match_parent" app:implementationMode="compatible" app:scaleType="fillCenter" />
+ <vn.edu.chamtracnghiem.SheetGuideView android:id="@+id/sheetGuide" android:layout_width="match_parent" android:layout_height="match_parent" />
+ <ImageView android:id="@+id/sheet" android:visibility="gone" android:scaleType="fitCenter" android:background="#111827" android:layout_width="match_parent" android:layout_height="match_parent" />
+ <LinearLayout android:orientation="vertical" android:padding="16dp" android:background="#E8111827" android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content">
+  <TextView android:id="@+id/status" android:text="Đưa 4 ô vuông đen vào 4 khung. Ứng dụng sẽ tự chấm." android:textColor="#FFFFFF" android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" />
+  <Spinner android:id="@+id/examPicker" android:layout_marginTop="7dp" android:background="#FFFFFF" android:layout_width="match_parent" android:layout_height="42dp" />
+  <Spinner android:id="@+id/codePicker" android:layout_marginTop="6dp" android:background="#FFFFFF" android:layout_width="match_parent" android:layout_height="42dp" />
+  <LinearLayout android:orientation="horizontal" android:layout_marginTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+   <Button android:id="@+id/camera" android:text="QUÉT TỰ ĐỘNG" android:enabled="false" android:layout_width="0dp" android:layout_weight="1" android:layout_height="50dp" />
+   <Button android:id="@+id/gallery" android:text="ẢNH" android:layout_width="78dp" android:layout_height="50dp" />
+   <Button android:id="@+id/retake" android:visibility="gone" android:text="QUÉT LẠI" android:layout_width="100dp" android:layout_height="50dp" />
+  </LinearLayout>
+ </LinearLayout>
+</FrameLayout>
